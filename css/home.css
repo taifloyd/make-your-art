@@ -1,0 +1,75 @@
+.over {
+    display: flex;
+    flex-direction: column;
+}
+
+header main a {
+    background-color: var(--color-three);
+    color: var(--color-four);
+    height: 5vh;
+    width: 4.6vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 1100ms;
+}
+
+header main a:hover {
+    background: var(--color-one);
+}
+
+.content main {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.content main h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+}
+.content .one {
+    margin-top: 150px;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 5vh;
+}
+
+.content .one:hover {
+    transform: translateX(0)
+    scale(1.4);
+    z-index: 10;
+    transition-duration: 0.8s;
+}
+
+.content .two {
+    border-radius: 50px;
+    margin-left: 11vw; 
+}
+
+.content .two:hover {
+    transform: translateX(0)
+    scale(1.1);
+    z-index: 10;
+    transition-duration: 0.8s;
+}
+
+.from a {
+    padding: 22vw;
+    color: var(--color-five);
+}
+
+
+
+
+
+
+
+
+
+

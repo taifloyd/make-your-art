@@ -1,0 +1,85 @@
+.over {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.content main .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: 48vw;
+}
+
+.content main .profile:hover {
+    opacity: 0.7;
+}
+
+.content main h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4.5vw;
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+
+.content main .profession {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4.8vw;
+    color: var(--color-five);
+}
+
+.content main .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-five);
+}
+.fa-map-marker-alt {
+    font-size: 18px;
+    color: var(--color-five);
+    margin-right: 5px;
+    margin-left: 46vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content main .art {
+    height: 45vh;
+    margin: 2vh;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.content main .five {
+    width: 29.5vw;
+}
+
+.content main .six {
+    width: 40vw;
+}
+
+.content main .art:hover {
+    transform: translateX(0)
+    scale(1.1);
+    z-index: 10;
+    transition-duration: 0.8s;
+}
+
+.content main .art-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2vw;
+}
+

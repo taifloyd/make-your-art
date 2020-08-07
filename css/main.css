@@ -1,0 +1,250 @@
+:root {
+    --color-one: #D98989;
+    --background: #D1C0BB;
+    --color-two: #A68D85;
+    --color-three: #F2D0BD;
+    --color-four: #1A2226;
+    --color-five: #474F59;
+    --color-footer: #919191;
+    --text-footer: #423F3F;
+    --color-google: #4285F4;
+    --color-sign: #735988;
+    --color-input: rgb(238, 227, 227);
+    --color-div: rgba(220, 220, 220, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--color-four);
+}
+
+
+header main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container {
+    width: 900px;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header main img {
+    height: 30px;
+    width: 30px;
+}
+
+header main h1 {
+    color: var(--color-three);
+}
+
+header main h1 span {
+    color: var(--color-one);
+}
+
+header main input {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 300px;
+    text-align: center;
+    color: var(--color-sign);
+}
+
+header main .sign {
+    background-color: var(--color-three);
+    color: var(--color-four);
+    height: 5vh;
+    width: 4.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 1100ms;
+}
+
+header main .sign:hover {
+    background: var(--color-one);
+}
+
+.fa-search {
+    position: absolute;
+    font-size: 15px;
+    border-radius: 50%;
+    right: 402px;
+    pointer-events: all;
+    color: var(--color-five);
+    cursor: pointer;
+}
+
+/*BUTTONS*/
+
+.btn main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-top: 5.9vh;
+    margin-bottom: 3vh;
+    background-color: var(--color-one);
+    color: white;
+    border-radius: 7px;
+    height: 5vh;
+    width: 10vw;
+    transition: 1100ms;
+}
+
+.btn main a:hover {
+    background-color: var(--color-two);
+}
+.btn main .here {
+    color: var(--color-four);
+}
+
+/*IMAGE FOOTER*/
+
+footer img {
+    width: 89vw;
+    margin-left: 5vw;
+    margin-right: 4vw;
+}
+
+/*FOOTER*/
+
+.line {
+    background:rgb(158, 160, 160);
+    filter: blur(0.8px);
+    margin-top: 5vh;
+    height: 1px;
+    width: 100%;
+}
+
+footer main {
+    display: flex;
+    flex-direction: row;
+}
+
+footer main section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer main h3 {
+    color: var(--color-footer);
+    font-size: 25px;
+    margin: 1vw;
+}
+
+footer main h3 span {
+    color: var(--color-five);
+}
+
+footer main p {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 1vw;
+    color: var(--text-footer);
+}
+
+footer main .copy {
+    margin-left: 4vw;
+    color: var(--text-footer);
+}
+
+footer main .partners {
+    font-weight: 600;
+    margin-top: 3.5vh;
+    margin-left: 4vw;
+}
+
+.fa-adobe {
+    font-size: 25px;
+    color: var(--text-footer);
+    margin-left: 5.2vw;
+    margin-top: 4.3vh;
+}
+
+footer main .adobe {
+    margin-left: 4.3vw;
+}
+
+footer main section p a {
+    color: var(--text-footer);
+}
+
+footer main .links {
+    margin-top: 4vh;
+    margin-left: 1vw;
+}
+
+footer main .cont {
+    margin-top: 6.5vh;
+}
+
+footer main .hiring{
+    font-weight: 600;
+    margin-left: 4.5vw;
+}
+
+footer main .cont-two a{
+    margin-left: 5vw;
+}
+
+footer main .social {
+    font-weight: 600;
+    margin-top: 4vh;
+    margin-left: 20vw;
+}
+
+footer main a .network {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-facebook {
+    color: var(--text-footer);
+    font-size: 25px;
+    margin-left: 22vw;
+    margin-top: 4.5vh;
+}
+
+.fa-instagram {
+    color: var(--text-footer);
+    font-size: 25px;
+}
+
+.fa-twitter {
+    color: var(--text-footer);
+    font-size: 25px;
+}
+
+

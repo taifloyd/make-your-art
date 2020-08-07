@@ -1,0 +1,198 @@
+.box .container {
+    height: 100%;
+}
+.box{
+    background: var(--color-four);
+    width: 20vw;
+    max-width: 25vw;
+}
+
+form {
+    margin-top: 25vh;
+    margin-left: 20vw;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.over {
+    display: flex;
+    flex-direction: column;
+}
+header main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ header main img {
+    height: 35px;
+    width: 35px;
+}
+
+header main h1 {
+    color: var(--color-three);
+    font-size: 25px;
+    transition: 1100ms; 
+}
+
+header main h1:hover {
+    background: var(--color-five);
+}
+
+header main span {
+    color: var(--color-one);
+}
+header main p {
+    color: var(--color-two);
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+}
+header main .art-one {
+    height: 15vh;
+    width: 15vw;
+    border-radius: 30px;
+    margin-top: 15vh;
+}
+
+header main .art-one:hover {
+    transform: translateX(0)
+    scale(1.4);
+    z-index: 10;
+    transition-duration: 0.8s;
+}
+
+header main .art-two {
+    height: 15vh;
+    width: 15vw;
+    border-radius: 30px;
+    margin-top: 10.6vh;
+}
+
+header main .art-two:hover {
+    transform: translateX(0)
+    scale(1.4);
+    z-index: 10;
+    transition-duration: 0.8s;
+}
+
+header main .made {
+    font-weight: 500;
+    margin-top: 20vh;
+}
+
+.fa-adobe {
+    color: var(--color-footer);
+    font-size: 25px;
+}
+
+.content main p {
+    color: var(--color-five);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.content main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    height: 5vh;
+    width: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 2vh;
+}
+
+.content main .google {
+    background-color: var(--color-google);
+    transition: 1100ms;
+}
+
+.content main .google:hover {
+    background: var(--background);
+}
+
+.fa-google {
+    margin-right: 5px;
+}
+
+.content main .facebook {
+    background: var(--color-two);
+    width: 4vw;
+    transition: 1100ms;
+}
+
+.content main .facebook:hover {
+    background: var(--background);
+}
+
+.fa-facebook {
+    font-size: 18px;
+}
+
+.content main .or {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 3vw;
+}
+
+.content main .password {
+    background: transparent;
+    font-weight: 400;
+    color: var(--color-sign);
+    box-shadow: none;
+}
+
+
+.content main .go {
+    background: var(--color-one);
+    width: 8vw;
+    transition: 1100ms;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+}
+
+.content main .go:hover {
+    background: var(--background);
+}
+
+label {
+    font-size: 18px;
+    color: var(--color-five);
+    font-weight: 600;
+}
+
+input{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    text-align: center;
+    height: 5vh;
+    width: 19vw;
+    background: var(--color-input);
+    outline-color: var(--color-five);
+
+}
+
+.content main .not {
+    color: var(--color-five);
+}
+.nott {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+.click {
+    color: var(--color-sign);
+}

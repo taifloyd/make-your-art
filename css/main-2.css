@@ -1,0 +1,28 @@
+:root {
+    --color-one: #D98989;
+    --background: #D1C0BB;
+    --color-two: #A68D85;
+    --color-three: #F2D0BD;
+    --color-four: #1A2226;
+    --color-five: #474F59;
+    --color-footer: #919191;
+    --text-footer: #423F3F;
+    --color-google: #4285F4;
+    --color-sign: #735988;
+    --color-input: rgb(238, 227, 227);
+    --color-div: rgba(220, 220, 220, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+}

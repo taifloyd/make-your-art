@@ -1,0 +1,156 @@
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.over {
+    display: flex;
+    flex-direction: column;
+}
+
+.content main .box-courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5vh;
+    height: 55vh;
+    width: 20vw;
+    background-color: var(--color-div);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.content main .box-courses p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.content main .box-courses a {
+    color: var(--color-five);
+    margin: 2px;
+}
+.content main img {
+    width: 100%;
+}
+
+.circle {
+    text-align: center;
+}
+
+.boxall {
+    margin: 2vh;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-div);
+    border-radius: 30px;
+    margin: 2vw;
+    height: 65vh;
+    width: 35vw;
+}
+
+.boxall img {
+    border-radius: 30px;
+}
+
+.boxall img:hover {
+    transform: translateX(0)
+    scale(1.1);
+    z-index: 10;
+    transition-duration: 0.8s;
+    opacity: 0.8;
+}
+
+.boxall .graphic {
+    height: 55vh;
+    width: 25vw;
+}
+
+.boxall .digipaint {
+    height: 58vh;
+    width: 30vw;
+}
+
+.boxall .uiux {
+    height: 35vh;
+    width: 25vw;
+}
+
+.boxall .illustra {
+    height: 35vh;
+    width: 25vw;
+}
+
+.boxall .threed {
+    width: 25vw;
+}
+
+.boxall p {
+    color: var(--color-four);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+/*Slideshow*/
+.content main .slide {
+    width: 55vw;
+    height: 55vh;
+    margin: 2.5vh auto;
+    border-radius: 30px;
+    background: var(--color-div);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+#image-background {
+    /* width: 55vw; */
+    width: 755px;
+    /* height: 55vh; */
+    height: 350px;
+    background-size: cover;
+    transition: 2000ms;
+}
+
+.pass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prev, .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -55vh;
+    color: white;
+    background: var(--color-five);
+    width: 2.5vw;
+    height: 10vh;
+    cursor: pointer;
+    transition: 5000;
+}
+
+.prev:hover {
+    background: var(--color-footer);
+}
+
+.next:hover {
+    background: var(--color-footer);
+}
+
+ul {
+    list-style: none;
+    width: 150px;
+    
+    background: var(--color-footer);
+}

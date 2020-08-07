@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to Make Your Art</title>
+    <link rel="stylesheet" href="./css/main-2.css">
+    <link rel="stylesheet" href="./css/sign-in.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/brush.png">
+    <script type="text/javascript" src="./js/validation-in.js"></script>
+</head>
+<body>
+   <!--HEADER-->
+   <section>
+   <header class="box">
+       <div class="container">
+           <main>
+           <a href="index.html"><img src="./img/brush.png" alt=""></a>
+           <a href="index.html"><h1>Make<span>Your Art</span></h1></a>
+           <p>Have inspo to <br> your arts and design</p>
+           <img src="./img/art 3 from behance.jpg" class="art-one">
+           <img src="./img/art 2 from behance.jpg" class="art-two">
+           <p class="made">Made with Adobe Illustrator</p>
+           <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChc
+           SEwjRkfzdm-npAhXLnLMKHQZjC0QYABAAGgJxbg&ohost=www.google.com&cid=CA
+           ESQOD2gpXfKvDWkVpBBMW5OVoTKu1bUf73c5TxVVIcIzWDrsoU7z169an2XpxKrQ0lpT4bDhZAoNqLJo1YlFXgBcI&sig=
+           AOD64_1XOi_di3kYn0_S-mXaGOMrQjVTRQ&q=&ved=2ahUKEwjj9fHdm-npAhXAmHIEHag4CSkQ0Qx6BAghEAE
+           &adurl="><i class="fab fa-adobe"></i></a>
+        </main>
+       </div>
+   </header>
+   <!--CONTENT-->
+   <div class="content">
+       <main>
+        <form id="form_login" method="post" onsubmit="return sendtoDB()">
+            <p>Sign in to Make Your Art</p>
+            <section>
+                <a href="#" class="google"> Sign in with Google</a>
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+               </section>
+               <p class="or">Or</p>
+            <section class="over">
+               <label for="email">Username or Email Address</label>
+               <input type="email" name="login">
+            </section>
+            <section class="over">
+                <label for="enter">Password</label>
+                <input type="password" name="senha">
+                <input type="submit" value="Sign in" class="go" id="btn_entrar">
+            </section>
+        </form>
+       </main>
+   </div>
+   <div class="nott">
+   <p class="not">Not a member?</p>
+   <a href="signup.html" class="click">Sign up now</a>
+</div>
+</section>
+</body>
+<script type="text/javascript" src="./js/validation-in.js"></script>
+</html>
+<script>
+    // function validate(){
+    //     const mail = (email.value);
+
+    //     if(!mail ||
+    //     mail.search("@")==-1 ||
+    //     mail.search(".")==-1 ||
+    //     mail.search(" ")>= ''){
+    //         alert('The correct format of the email is: user@domain.com');
+    //     }else{}
+    // }
+
+    function sendtoDB(){
+        // aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    
+                    window.location.href = 'portfolio.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                    // finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    // function aguardar() {
+    //     btn_entrar.disabled = true;
+    //     img_aguarde.style.display = 'block';
+    //     div_erro.style.display = 'none';
+    // }
+
+    // function finalizar_aguardar(resposta) {
+    //     btn_entrar.disabled = false;
+    //     img_aguarde.style.display= 'none';
+    //     div_erro.style.display = 'block';
+    //     div_erro.innerHTML = resposta;
+    // }
+
+</script>
